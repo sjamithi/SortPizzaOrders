@@ -35,6 +35,10 @@ public class Pizza implements Comparable<Pizza> {
     }
 
     public String getOutputString() {
-        return name + " " + orderTime;
+        Long time = Long.parseLong(orderTime) * 1000;
+        Date date = new Date(time);
+        DateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String formatted = format.format(date);
+        return name + " " + formatted;
     }
 }

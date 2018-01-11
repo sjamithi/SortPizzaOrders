@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dao.PizzaOrdersImplTest" time="0.452" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="dao.PizzaOrdersImplTest" time="0.484" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -64,6 +64,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="when_inputPath_andNoOrdersAreGiven_thenExceptionThrown" classname="dao.PizzaOrdersImplTest" time="0.392"/>
-  <testcase name="when_inputPath_alongWithOrdersAreGiven_thenSortTheOrders" classname="dao.PizzaOrdersImplTest" time="0.06"/>
+  <testcase name="when_inputPath_andNoOrdersAreGiven_thenExceptionThrown" classname="dao.PizzaOrdersImplTest" time="0.43"/>
+  <testcase name="when_inputPath_alongWithOrdersAreGiven_thenSortTheOrders" classname="dao.PizzaOrdersImplTest" time="0.054"/>
 </testsuite>
