@@ -4,6 +4,7 @@ import dao.PizzaOrdersImpl;
 import models.Pizza;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -21,7 +22,7 @@ public class HelloController {
     private PizzaOrdersImpl pizzaOrdersImpl = new PizzaOrdersImpl();
     Logger logger = Logger.getLogger("HelloController");
     
-    @RequestMapping("/hello")
+    @RequestMapping(method = RequestMethod.GET, value="/hello")
     public List<Pizza> sortPizzaOrders() {
         logger.info("Processing the file from input path");
         return pizzaOrdersImpl.sortPizzaOrders(inputPath, outputPath);

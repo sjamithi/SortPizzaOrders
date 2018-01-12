@@ -1,3 +1,4 @@
+hello\SwaggerConfig.class
 dao\PizzaOrdersImpl.class
 repository\PizzaSortOrderRepositoryImpl.class
 controllers\SortPizzaOrderController.class
