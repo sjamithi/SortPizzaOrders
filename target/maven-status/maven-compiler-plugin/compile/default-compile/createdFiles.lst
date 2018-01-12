@@ -1,7 +1,6 @@
-hello\SwaggerConfig.class
+controller\SwaggerConfig.class
 dao\PizzaOrdersImpl.class
 repository\PizzaSortOrderRepositoryImpl.class
-controllers\SortPizzaOrderController.class
 models\Pizza.class
-hello\HelloController.class
-hello\Application.class
+controller\SortOrdersController.class
+controller\Application.class

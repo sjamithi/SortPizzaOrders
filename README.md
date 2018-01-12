@@ -26,7 +26,7 @@ It can also be run using command line by executing the jar file using the comman
  or "mvn clean install" also runs all the tests
  
  To be consumed on the front end or see the working end point on the browser
- type the url "http://localhost:8080/hello"
+ type the url "http://localhost:8080/controller"
 This returns the list of the orders sorted lexicographically.
  
 
