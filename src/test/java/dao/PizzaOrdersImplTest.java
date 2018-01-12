@@ -29,7 +29,8 @@ public class PizzaOrdersImplTest {
         Mockito.doReturn(values).when(pizzaOrders).readFile(Mockito.anyString());
         Mockito.doNothing().when(pizzaOrders).writeFile(Mockito.anyString(), Mockito.anyList());
         List<Pizza> sorted = pizzaOrders.sortPizzaOrders("a", "b");
-        Assert.assertEquals(2, sorted.size());
+        Assert.assertEquals(values.get(2), sorted.get(0).getName() + " " + sorted.get(0).getOrderTime());
+        Assert.assertEquals(values.get(1), sorted.get(1).getName() + " " + sorted.get(1).getOrderTime());
     }
 
     @Test(expected = Exception.class)

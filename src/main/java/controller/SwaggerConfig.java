@@ -1,5 +1,6 @@
 package controller;
 
+import com.google.common.base.Predicate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -21,7 +22,7 @@ import static com.google.common.base.Predicates.or;
                     .apiInfo(apiInfo()).select().paths(postPaths()).build();
         }
 
-        private com.google.common.base.Predicate<String> postPaths() {
+        private Predicate<String> postPaths() {
             return or(regex("/api/posts.*"), regex("/sort"));
         }
 
